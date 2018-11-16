@@ -113,6 +113,29 @@ config ARCH_MVEBU
 	   - Armada 7K SoC Family
 	   - Armada 8K SoC Family
 
+config ARCH_RAPHIELSCAPE_FUTANARI
+	bool "Raphielscape LLC Futanari platform"
+	select ARCH_QCOM
+	help
+		Support for MSM8953 based chipsets. If you enable this 
+		config, don't kanging stuff here kthx.
+
+config MACH_XIAOMI_BLACKROVER
+	bool "Xiaomi Redmi Note 4X"
+	depends on ARCH_RAPHIELSCAPE_FUTANARI
+	select ARCH_MSM8953
+	help
+		This enables support for Xiaomi Redmi Note 4X that is MSM8953
+		based chipset. If you do not wish to build kernel for this meme,
+		say 'N' here kthx.
+
+config ARCH_RAPHIELSCAPE_AYAMU
+	bool "Raphielscape LLC Ayamu platform"
+	select ARCH_QCOM
+	help
+		Support for SDM845 based chipsets. This config doesn't do
+		anything until we done the Dorayaki Project.
+
 config ARCH_QCOM
 	bool "Qualcomm Platforms"
 	select PINCTRL
