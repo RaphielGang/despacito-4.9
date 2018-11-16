@@ -124,6 +124,9 @@ config MACH_XIAOMI_BLACKROVER
 	bool "Xiaomi Redmi Note 4X"
 	depends on ARCH_RAPHIELSCAPE_FUTANARI
 	select ARCH_MSM8953
+	select CONFIG_TOUCHSCREEN_FT5435
+	select CONFIG_TOUCHSCREEN_IST3038C
+	select CONFIG_TOUCHSCREEN_GT9XX_MIDO
 	help
 		This enables support for Xiaomi Redmi Note 4X that is MSM8953
 		based chipset. If you do not wish to build kernel for this meme,
